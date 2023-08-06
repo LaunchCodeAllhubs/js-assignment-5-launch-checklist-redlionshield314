@@ -74,11 +74,11 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     alert("CargoLevel must be a number")
   }
   
-  listPilot.innerHTML = `Pilot ${pilot} is ready to launch`;
+  listPilot.innerHTML = `Pilot ${pilot} is ready for launch`;
   listCopilot.innerHTML = `Co-pilot ${copilot} is ready for launch`;
 
   if (fuelLevel >= 10000 && cargoLevel <= 10000){
-    launchStatus.innerHTML = "Shuttle is Ready for launch";
+    launchStatus.innerHTML = "Shuttle is Ready for Launch";
     launchStatus.style.color = "rgb(65, 159, 106)";
     list.style.visibility = 'hidden';
   }
